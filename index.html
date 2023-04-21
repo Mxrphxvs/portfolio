@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morpheus Seedo | Portfolio </title>
+    <meta name="author" content="Morpheus Seedo">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</head>
+
+<body class="home">
+    <div class="wrapper">
+
+        <!-- menu -->
+        <nav class="menu">
+            <div class="menu__logo">
+                <a href="index.html">ms</a>
+            </div>
+            <div class="menu__items">
+                <div class="menu__items-link active"><a href="index.html">Projecten</a></div>
+                <div class="menu__items-link"><a href="over_mij.html">Over mij</a></div>
+            </div>
+        </nav>
+
+        <!-- horizontal scroll items -->
+        <div class="container">
+            <div class="container__item container__item-header">
+                <h1>Morpheus Seedo, <br> Grafisch ontwerper</h1>
+            </div>
+
+            <div class="container__item container__item-1">
+                <h1 class="container__item-title">
+                    <a href="project.html">Webdesign</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-2">
+                <h1 class="container__item-title">
+                    <a href="project_2.html">Boxing Influencers (werk)</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-3">
+                <h1 class="container__item-title">
+                    <a href="project_3.html">Appdesign</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-4">
+                <h1 class="container__item-title">
+                    <a href="project_4.html">WFL (stage)</a>
+                </h1>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@600&display=swap');
+    </style> 
+
+    <!-- script -->
+    <script src="js/horizontal-scroll.js"></script>
+    <script>
+        var blocks = document.getElementsByClassName("container__item");
+        var container = document.getElementsByClassName("container");
+        var hs = new HorizontalScroll.default({
+            blocks: blocks,
+            container: container,
+            isAnimated: true,
+            springEffect: 0.8,
+        });
+    </script>
+</body>
+
+</html>
